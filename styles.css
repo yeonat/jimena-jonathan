@@ -18,3 +18,11 @@
 .section-dots{display:none}
 .hero .eyebrow{font-size:29px}
 @media(max-width:520px){.hero .eyebrow{font-size:22px}}
+.journey-collage{height:auto;display:grid;gap:30px}
+.photo-year-group h3{margin:0 0 12px;color:#e8c1ad;font:500 27px var(--serif)}
+.photo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.journey-collage .polaroid{position:static;width:100%;padding:7px 7px 12px;transform:none;font-size:15px}
+.journey-collage .polaroid img{width:100%;height:auto;aspect-ratio:1 / 1.15;object-fit:cover}
+.journey-collage .polaroid span{display:block;padding-top:7px;text-align:center}
+@media(max-width:980px){.photo-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:520px){.photo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
