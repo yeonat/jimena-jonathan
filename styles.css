@@ -18,11 +18,21 @@
 .section-dots{display:none}
 .hero .eyebrow{font-size:29px}
 @media(max-width:520px){.hero .eyebrow{font-size:22px}}
-.journey-collage{height:auto;display:grid;gap:30px}
-.photo-year-group h3{margin:0 0 12px;color:#e8c1ad;font:500 27px var(--serif)}
-.photo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
-.journey-collage .polaroid{position:static;width:100%;padding:7px 7px 12px;transform:none;font-size:15px}
+.journey-collage{height:auto;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px 22px;align-items:start}
+.destination-card{min-width:0}
+.destination-cover{position:relative;display:block;width:100%;margin:12px auto 0;padding:7px 7px 12px;border:0;background:transparent;color:#444;text-align:center;cursor:pointer}
+.destination-cover:focus-visible{outline:2px solid #e8c1ad;outline-offset:5px}
+.destination-cover>img{position:relative;z-index:1;display:block;width:100%;aspect-ratio:4 / 5;object-fit:cover;padding:6px 6px 0;background:#fff;box-shadow:0 12px 35px #061b1555}
+.fan-card{position:absolute;z-index:0;top:7px;left:7px;width:calc(100% - 14px);aspect-ratio:4 / 5;background:#fff;box-shadow:0 12px 35px #061b1555;transform:rotate(-9deg);transition:transform .25s ease}
+.fan-card-middle{transform:rotate(7deg)}
+.destination-cover:hover .fan-card-back,.destination-cover[aria-expanded="true"] .fan-card-back{transform:rotate(-13deg) translate(-3px,-2px)}
+.destination-cover:hover .fan-card-middle,.destination-cover[aria-expanded="true"] .fan-card-middle{transform:rotate(11deg) translate(3px,-2px)}
+.destination-label{position:relative;z-index:1;display:grid;gap:3px;padding:10px 4px 0;background:#fff}
+.destination-label strong{font:500 23px var(--serif)}
+.destination-label small{font:10px var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.photo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:20px}
+.photo-grid[hidden]{display:none}
+.journey-collage .polaroid{position:static;width:100%;padding:6px 6px 10px;transform:none;font-size:14px}
 .journey-collage .polaroid img{width:100%;height:auto;aspect-ratio:1 / 1.15;object-fit:cover}
-.journey-collage .polaroid span{display:block;padding-top:7px;text-align:center}
-@media(max-width:980px){.photo-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
-@media(max-width:520px){.photo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.journey-collage .polaroid span{display:block;padding-top:6px;text-align:center}
+@media(max-width:520px){.journey-collage{gap:26px 14px}.destination-label strong{font-size:20px}.destination-label small{font-size:9px}.photo-grid{gap:7px}}

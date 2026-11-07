@@ -98,7 +98,7 @@ document.querySelectorAll('.gift-detail').forEach((button) => {
 const viewer = document.querySelector('#image-viewer');
 const viewerImage = document.querySelector('#viewer-image');
 const viewerCaption = document.querySelector('#viewer-caption');
-const galleryItems = [...document.querySelectorAll('.journey-collage .polaroid')];
+const galleryItems = [...document.querySelectorAll('.journey-collage .photo-open')];
 let currentImageIndex = 0;
 
 const showImage = (index) => {
@@ -106,8 +106,20 @@ const showImage = (index) => {
   const image = galleryItems[currentImageIndex].querySelector('img');
   viewerImage.src = image.src;
   viewerImage.alt = image.alt;
-  viewerCaption.textContent = galleryItems[currentImageIndex].querySelector('span').textContent;
+  viewerCaption.textContent = galleryItems[currentImageIndex].querySelector(
+    '.destination-label strong, .polaroid span',
+  ).textContent;
 };
+
+document.querySelectorAll('.destination-cover').forEach((cover) => {
+  cover.addEventListener('click', () => {
+    const gallery = document.querySelector(`#${cover.getAttribute('aria-controls')}`);
+    if (!gallery.children.length) return;
+    const expanded = cover.getAttribute('aria-expanded') === 'true';
+    cover.setAttribute('aria-expanded', String(!expanded));
+    gallery.hidden = expanded;
+  });
+});
 
 const closeViewer = () => {
   viewer.hidden = true;
