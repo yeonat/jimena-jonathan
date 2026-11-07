@@ -4,16 +4,50 @@ const navLinks = [...document.querySelectorAll('.site-nav a')];
 const sectionDots = [...document.querySelectorAll('.section-dots a')];
 const sections = [...document.querySelectorAll('main section[id]')];
 
+const closeMenu = () => {
+  siteNav?.classList.remove('open');
+  menuToggle?.setAttribute('aria-expanded', 'false');
+  document.body.classList.remove('menu-open');
+};
+
+const openMenu = () => {
+  siteNav?.classList.add('open');
+  menuToggle?.setAttribute('aria-expanded', 'true');
+  document.body.classList.add('menu-open');
+};
+
 menuToggle?.addEventListener('click', () => {
-  const isOpen = siteNav.classList.toggle('open');
-  menuToggle.setAttribute('aria-expanded', String(isOpen));
+  const isOpen = siteNav?.classList.contains('open');
+
+  if (isOpen) {
+    closeMenu();
+    return;
+  }
+
+  openMenu();
 });
 
 navLinks.forEach((link) => {
   link.addEventListener('click', () => {
-    siteNav.classList.remove('open');
-    menuToggle?.setAttribute('aria-expanded', 'false');
+    closeMenu();
   });
+});
+
+document.addEventListener('click', (event) => {
+  if (!siteNav || !menuToggle) return;
+
+  const clickedInsideNav = siteNav.contains(event.target);
+  const clickedToggle = menuToggle.contains(event.target);
+
+  if (siteNav.classList.contains('open') && !clickedInsideNav && !clickedToggle) {
+    closeMenu();
+  }
+});
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 980) {
+    closeMenu();
+  }
 });
 
 const revealObserver = new IntersectionObserver((entries) => {
