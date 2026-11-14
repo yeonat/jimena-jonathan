@@ -83,12 +83,6 @@ sectionDots.forEach((dot) => {
   });
 });
 
-document.querySelector('#rsvp-button')?.addEventListener('click', (event) => {
-  event.currentTarget.textContent = '¡Gracias por confirmar! ♥';
-  event.currentTarget.disabled = true;
-  document.querySelector('#rsvp-message').textContent = 'Pronto nos pondremos en contacto contigo.';
-});
-
 document.querySelectorAll('.gift-detail').forEach((button) => {
   button.addEventListener('click', () => {
     document.querySelector('#account-details').classList.toggle('is-visible');
