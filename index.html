@@ -59,32 +59,41 @@
           <p class="eyebrow">Cada lugar tiene un significado</p>
           <h2>Nuestra<br><em>historia</em></h2>
           <p class="body-copy">Nos encontramos por casualidad y decidimos convertir cada camino en una nueva aventura. Desde aquel primer viaje, hemos coleccionado paisajes, risas y recuerdos que hoy nos traen hasta aquí.</p>
-          <div class="route-list">
-            <div><span class="route-dot"></span><strong>El inicio</strong><small>Santa Rosa · 06.03.2027</small></div>
-            <div><span class="route-dot"></span><strong>El camino</strong><small>Viajes, sueños y kilómetros juntos</small></div>
-            <div><span class="route-dot"></span><strong>El destino</strong><small>Para siempre, lado a lado</small></div>
-          </div>
+          <ul class="route-list" aria-label="Leyenda del mapa">
+            <li class="route-legend-item">
+              <svg class="legend-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              <span>Dónde nos conocimos</span>
+            </li>
+            <li class="route-legend-item">
+              <svg class="legend-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3V6Z"/><path d="M9 3v15m6-12v15"/></svg>
+              <span>Viajes</span>
+            </li>
+            <li class="route-legend-item">
+              <svg class="legend-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6.5" cy="17.5" r="3"/><circle cx="17.5" cy="17.5" r="3"/><path d="m6.5 17.5 4-7h4l3 7m-7-7 3 7h4m-7-7H8L6.5 8H4"/></svg>
+              <span>Rutas en moto</span>
+            </li>
+            <li class="route-legend-item">
+              <svg class="legend-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9L12 3Z"/></svg>
+              <span>Lugares especiales</span>
+            </li>
+            <li class="route-legend-item">
+              <svg class="legend-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 21V4m0 1c5-4 9 4 14 0v9c-5 4-9-4-14 0Z"/><path d="m12 8 .8 1.6 1.8.3-1.3 1.2.3 1.8-1.6-.8-1.6.8.3-1.8-1.3-1.2 1.8-.3L12 8Z"/></svg>
+              <span>Nuestro destino</span>
+            </li>
+          </ul>
         </div>
         <div class="journey-collage">
           <article class="destination-card">
-            <button class="destination-cover" type="button" aria-expanded="false" aria-controls="gallery-arequipa" aria-label="Mostrar fotos de Arequipa">
-              <span class="fan-card fan-card-back" aria-hidden="true"></span><span class="fan-card fan-card-middle" aria-hidden="true"></span>
-              <img loading="lazy" decoding="async" src="resources/photos/2021/arequipa/arequipa_1.jpg" alt="">
-              <span class="destination-label"><strong>Arequipa</strong><small>2021 · 3 recuerdos</small></span>
-            </button>
-            <div class="photo-grid" id="gallery-arequipa" hidden>
+            <h3 class="destination-label"><strong>Arequipa</strong><small>2021 · 3 recuerdos</small></h3>
+            <div class="photo-grid" id="gallery-arequipa">
               <button class="polaroid photo-open" type="button" aria-label="Abrir foto de Arequipa 1, 2021"><img loading="lazy" decoding="async" src="resources/photos/2021/arequipa/arequipa_1.jpg" alt="Arequipa, 2021"><span>Arequipa 1</span></button>
               <button class="polaroid photo-open" type="button" aria-label="Abrir foto de Arequipa 2, 2021"><img loading="lazy" decoding="async" src="resources/photos/2021/arequipa/arequipa_2.jpg" alt="Arequipa, 2021"><span>Arequipa 2</span></button>
               <button class="polaroid photo-open" type="button" aria-label="Abrir foto de Arequipa 3, 2021"><img loading="lazy" decoding="async" src="resources/photos/2021/arequipa/arequipa_3.jpg" alt="Arequipa, 2021"><span>Arequipa 3</span></button>
             </div>
           </article>
           <article class="destination-card">
-            <button class="destination-cover" type="button" aria-expanded="false" aria-controls="gallery-moquegua" aria-label="Mostrar fotos de Moquegua">
-              <span class="fan-card fan-card-back" aria-hidden="true"></span><span class="fan-card fan-card-middle" aria-hidden="true"></span>
-              <img loading="lazy" decoding="async" src="resources/photos/2021/moquegua/moquegua_1.jpg" alt="">
-              <span class="destination-label"><strong>Moquegua</strong><small>2021 · 4 recuerdos</small></span>
-            </button>
-            <div class="photo-grid" id="gallery-moquegua" hidden>
+            <h3 class="destination-label"><strong>Moquegua</strong><small>2021 · 4 recuerdos</small></h3>
+            <div class="photo-grid" id="gallery-moquegua">
               <button class="polaroid photo-open" type="button" aria-label="Abrir foto de Moquegua 1, 2021"><img loading="lazy" decoding="async" src="resources/photos/2021/moquegua/moquegua_1.jpg" alt="Moquegua, 2021"><span>Moquegua 1</span></button>
               <button class="polaroid photo-open" type="button" aria-label="Abrir foto de Moquegua 2, 2021"><img loading="lazy" decoding="async" src="resources/photos/2021/moquegua/moquegua_2.jpg" alt="Moquegua, 2021"><span>Moquegua 2</span></button>
               <button class="polaroid photo-open" type="button" aria-label="Abrir foto de Moquegua 3, 2021"><img loading="lazy" decoding="async" src="resources/photos/2021/moquegua/moquegua_3.jpg" alt="Moquegua, 2021"><span>Moquegua 3</span></button>
@@ -92,22 +101,14 @@
             </div>
           </article>
           <article class="destination-card">
-            <button class="destination-cover" type="button" aria-expanded="false" aria-controls="gallery-tacna" aria-label="Mostrar fotos de Tacna">
-              <span class="fan-card fan-card-back" aria-hidden="true"></span><span class="fan-card fan-card-middle" aria-hidden="true"></span>
-              <img loading="lazy" decoding="async" src="resources/photos/2021/tacna/tacna_1.jpg" alt="">
-              <span class="destination-label"><strong>Tacna</strong><small>2021 · 1 recuerdo</small></span>
-            </button>
-            <div class="photo-grid" id="gallery-tacna" hidden>
+            <h3 class="destination-label"><strong>Tacna</strong><small>2021 · 1 recuerdo</small></h3>
+            <div class="photo-grid" id="gallery-tacna">
               <button class="polaroid photo-open" type="button" aria-label="Abrir foto de Tacna 1, 2021"><img loading="lazy" decoding="async" src="resources/photos/2021/tacna/tacna_1.jpg" alt="Tacna, 2021"><span>Tacna 1</span></button>
             </div>
           </article>
           <article class="destination-card">
-            <button class="destination-cover" type="button" aria-expanded="false" aria-controls="gallery-aguaytia" aria-label="Mostrar fotos de Aguaytía">
-              <span class="fan-card fan-card-back" aria-hidden="true"></span><span class="fan-card fan-card-middle" aria-hidden="true"></span>
-              <img loading="lazy" decoding="async" src="resources/photos/2022/aguaytia/aguaytia_1.jpg" alt="">
-              <span class="destination-label"><strong>Aguaytía</strong><small>2022 · 4 recuerdos</small></span>
-            </button>
-            <div class="photo-grid" id="gallery-aguaytia" hidden>
+            <h3 class="destination-label"><strong>Aguaytía</strong><small>2022 · 4 recuerdos</small></h3>
+            <div class="photo-grid" id="gallery-aguaytia">
               <button class="polaroid photo-open" type="button" aria-label="Abrir foto de Aguaytía 1, 2022"><img loading="lazy" decoding="async" src="resources/photos/2022/aguaytia/aguaytia_1.jpg" alt="Aguaytía, 2022"><span>Aguaytía 1</span></button>
               <button class="polaroid photo-open" type="button" aria-label="Abrir foto de Aguaytía 2, 2022"><img loading="lazy" decoding="async" src="resources/photos/2022/aguaytia/aguaytia_2.jpeg" alt="Aguaytía, 2022"><span>Aguaytía 2</span></button>
               <button class="polaroid photo-open" type="button" aria-label="Abrir foto de Aguaytía 3, 2022"><img loading="lazy" decoding="async" src="resources/photos/2022/aguaytia/aguaytia_3.jpeg" alt="Aguaytía, 2022"><span>Aguaytía 3</span></button>
@@ -115,34 +116,22 @@
             </div>
           </article>
           <article class="destination-card">
-            <button class="destination-cover" type="button" aria-expanded="false" aria-controls="gallery-huanuco" aria-label="Mostrar fotos de Huánuco">
-              <span class="fan-card fan-card-back" aria-hidden="true"></span><span class="fan-card fan-card-middle" aria-hidden="true"></span>
-              <img loading="lazy" decoding="async" src="resources/photos/2022/huanuco/huanuco_1.jpg" alt="">
-              <span class="destination-label"><strong>Huánuco</strong><small>2022 · 2 recuerdos</small></span>
-            </button>
-            <div class="photo-grid" id="gallery-huanuco" hidden>
+            <h3 class="destination-label"><strong>Huánuco</strong><small>2022 · 2 recuerdos</small></h3>
+            <div class="photo-grid" id="gallery-huanuco">
               <button class="polaroid photo-open" type="button" aria-label="Abrir foto de Huánuco 1, 2022"><img loading="lazy" decoding="async" src="resources/photos/2022/huanuco/huanuco_1.jpg" alt="Huánuco, 2022"><span>Huánuco 1</span></button>
               <button class="polaroid photo-open" type="button" aria-label="Abrir foto de Huánuco 2, 2022"><img loading="lazy" decoding="async" src="resources/photos/2022/huanuco/huanuco_2.jpg" alt="Huánuco, 2022"><span>Huánuco 2</span></button>
             </div>
           </article>
           <article class="destination-card">
-            <button class="destination-cover" type="button" aria-expanded="false" aria-controls="gallery-pucallpa" aria-label="Mostrar fotos de Pucallpa">
-              <span class="fan-card fan-card-back" aria-hidden="true"></span><span class="fan-card fan-card-middle" aria-hidden="true"></span>
-              <img loading="lazy" decoding="async" src="resources/photos/2022/pucallpa/pucallpa_1.jpg" alt="">
-              <span class="destination-label"><strong>Pucallpa</strong><small>2022 · 2 recuerdos</small></span>
-            </button>
-            <div class="photo-grid" id="gallery-pucallpa" hidden>
+            <h3 class="destination-label"><strong>Pucallpa</strong><small>2022 · 2 recuerdos</small></h3>
+            <div class="photo-grid" id="gallery-pucallpa">
               <button class="polaroid photo-open" type="button" aria-label="Abrir foto de Pucallpa 1, 2022"><img loading="lazy" decoding="async" src="resources/photos/2022/pucallpa/pucallpa_1.jpg" alt="Pucallpa, 2022"><span>Pucallpa 1</span></button>
               <button class="polaroid photo-open" type="button" aria-label="Abrir foto de Pucallpa 2, 2022"><img loading="lazy" decoding="async" src="resources/photos/2022/pucallpa/pucallpa_2.jpeg" alt="Pucallpa, 2022"><span>Pucallpa 2</span></button>
             </div>
           </article>
           <article class="destination-card">
-            <button class="destination-cover" type="button" aria-expanded="false" aria-controls="gallery-chile" aria-label="Mostrar fotos de Chile">
-              <span class="fan-card fan-card-back" aria-hidden="true"></span><span class="fan-card fan-card-middle" aria-hidden="true"></span>
-              <img loading="lazy" decoding="async" src="resources/photos/2025/chile/chile_1.jpg" alt="">
-              <span class="destination-label"><strong>Chile</strong><small>2025 · 5 recuerdos</small></span>
-            </button>
-            <div class="photo-grid" id="gallery-chile" hidden>
+            <h3 class="destination-label"><strong>Chile</strong><small>2025 · 5 recuerdos</small></h3>
+            <div class="photo-grid" id="gallery-chile">
               <button class="polaroid photo-open" type="button" aria-label="Abrir foto de Chile 1, 2025"><img loading="lazy" decoding="async" src="resources/photos/2025/chile/chile_1.jpg" alt="Chile, 2025"><span>Chile 1</span></button>
               <button class="polaroid photo-open" type="button" aria-label="Abrir foto de Chile 2, 2025"><img loading="lazy" decoding="async" src="resources/photos/2025/chile/chile_2.jpeg" alt="Chile, 2025"><span>Chile 2</span></button>
               <button class="polaroid photo-open" type="button" aria-label="Abrir foto de Chile 3, 2025"><img loading="lazy" decoding="async" src="resources/photos/2025/chile/chile_3.jpeg" alt="Chile, 2025"><span>Chile 3</span></button>
@@ -151,24 +140,16 @@
             </div>
           </article>
           <article class="destination-card">
-            <button class="destination-cover" type="button" aria-expanded="false" aria-controls="gallery-colombia" aria-label="Mostrar fotos de Colombia">
-              <span class="fan-card fan-card-back" aria-hidden="true"></span><span class="fan-card fan-card-middle" aria-hidden="true"></span>
-              <img loading="lazy" decoding="async" src="resources/photos/2025/colombia/bogota_1.jpg" alt="">
-              <span class="destination-label"><strong>Colombia</strong><small>2025 · 3 recuerdos</small></span>
-            </button>
-            <div class="photo-grid" id="gallery-colombia" hidden>
+            <h3 class="destination-label"><strong>Colombia</strong><small>2025 · 3 recuerdos</small></h3>
+            <div class="photo-grid" id="gallery-colombia">
               <button class="polaroid photo-open" type="button" aria-label="Abrir foto de Bogotá 1, 2025"><img loading="lazy" decoding="async" src="resources/photos/2025/colombia/bogota_1.jpg" alt="Bogotá, Colombia, 2025"><span>Bogotá 1</span></button>
               <button class="polaroid photo-open" type="button" aria-label="Abrir foto de Medellín 1, 2025"><img loading="lazy" decoding="async" src="resources/photos/2025/colombia/medellin_1.jpg" alt="Medellín, Colombia, 2025"><span>Medellín 1</span></button>
               <button class="polaroid photo-open" type="button" aria-label="Abrir foto de Medellín 2, 2025"><img loading="lazy" decoding="async" src="resources/photos/2025/colombia/medellin_2.jpg" alt="Medellín, Colombia, 2025"><span>Medellín 2</span></button>
             </div>
           </article>
           <article class="destination-card">
-            <button class="destination-cover" type="button" aria-expanded="false" aria-controls="gallery-cusco" aria-label="Mostrar fotos de Cusco">
-              <span class="fan-card fan-card-back" aria-hidden="true"></span><span class="fan-card fan-card-middle" aria-hidden="true"></span>
-              <img loading="lazy" decoding="async" src="resources/photos/2026/cusco/cusco_1.jpg" alt="">
-              <span class="destination-label"><strong>Cusco</strong><small>2026 · 5 recuerdos</small></span>
-            </button>
-            <div class="photo-grid" id="gallery-cusco" hidden>
+            <h3 class="destination-label"><strong>Cusco</strong><small>2026 · 5 recuerdos</small></h3>
+            <div class="photo-grid" id="gallery-cusco">
               <button class="polaroid photo-open" type="button" aria-label="Abrir foto de Cusco 1, 2026"><img loading="lazy" decoding="async" src="resources/photos/2026/cusco/cusco_1.jpg" alt="Cusco, 2026"><span>Cusco 1</span></button>
               <button class="polaroid photo-open" type="button" aria-label="Abrir foto de Cusco 2, 2026"><img loading="lazy" decoding="async" src="resources/photos/2026/cusco/cusco_2.jpg" alt="Cusco, 2026"><span>Cusco 2</span></button>
               <button class="polaroid photo-open" type="button" aria-label="Abrir foto de Cusco 3, 2026"><img loading="lazy" decoding="async" src="resources/photos/2026/cusco/cusco_3.jpg" alt="Cusco, 2026"><span>Cusco 3</span></button>
@@ -177,12 +158,8 @@
             </div>
           </article>
           <article class="destination-card">
-            <button class="destination-cover" type="button" aria-expanded="false" aria-controls="gallery-en-ruta" aria-label="Mostrar fotos de viajes en ruta">
-              <span class="fan-card fan-card-back" aria-hidden="true"></span><span class="fan-card fan-card-middle" aria-hidden="true"></span>
-              <img loading="lazy" decoding="async" src="resources/photos/en_ruta/motos_1.jpg" alt="">
-              <span class="destination-label"><strong>En ruta</strong><small>2 recuerdos</small></span>
-            </button>
-            <div class="photo-grid" id="gallery-en-ruta" hidden>
+            <h3 class="destination-label"><strong>En ruta</strong><small>2 recuerdos</small></h3>
+            <div class="photo-grid" id="gallery-en-ruta">
               <button class="polaroid photo-open" type="button" aria-label="Abrir foto de viaje en ruta 1"><img loading="lazy" decoding="async" src="resources/photos/en_ruta/motos_1.jpg" alt="Viaje en ruta"><span>En ruta 1</span></button>
               <button class="polaroid photo-open" type="button" aria-label="Abrir foto de viaje en ruta 2"><img loading="lazy" decoding="async" src="resources/photos/en_ruta/motos_2.jpg" alt="Viaje en ruta"><span>En ruta 2</span></button>
             </div>

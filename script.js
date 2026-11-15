@@ -105,16 +105,6 @@ const showImage = (index) => {
   ).textContent;
 };
 
-document.querySelectorAll('.destination-cover').forEach((cover) => {
-  cover.addEventListener('click', () => {
-    const gallery = document.querySelector(`#${cover.getAttribute('aria-controls')}`);
-    if (!gallery.children.length) return;
-    const expanded = cover.getAttribute('aria-expanded') === 'true';
-    cover.setAttribute('aria-expanded', String(!expanded));
-    gallery.hidden = expanded;
-  });
-});
-
 const closeViewer = () => {
   viewer.hidden = true;
   document.body.style.overflow = '';
